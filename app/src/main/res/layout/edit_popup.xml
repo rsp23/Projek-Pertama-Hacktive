@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/popup_element">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD a new task"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:id="@+id/text1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What do you want to do next?"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:id="@+id/text2"
+        android:layout_below="@+id/text1"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="#1E90FF"
+        android:lineHeight="4dp"
+        android:id="@+id/editTaks"
+        android:layout_below="@+id/text2"/>
+    <Button
+
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:layout_below="@+id/editTaks"/>
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:id="@+id/save_popup"
+        android:layout_below="@+id/editTaks"
+        android:layout_toRightOf="@+id/cancel"/>
+
+</RelativeLayout>
